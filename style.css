@@ -1,0 +1,120 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    background-image: url(emoji3.jpeg);
+
+}
+.container {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; /* Add this line to enable vertical scrolling */
+ 
+
+}
+
+
+/* Styles for the heading */
+#heading{
+    text-align: center;
+    color: #f3eeed;
+    padding: 1rem;
+    font-weight: bold; /* Add bold style */
+    font-style: italic; /* Add italic style */
+}
+
+/* Styles for the search form */
+.form{
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Styles for the search input */
+#search-bar{
+    width: 50%;
+    padding: 0.65rem;
+    border-radius: 100px;
+    border: 2px solid rgb(143, 143, 138);
+}
+
+/* Styles for the search input when focused */
+#search-bar:focus{
+    outline: none;
+}
+
+/* Styles for the search icon button */
+#search-icon{
+    padding: 0.75rem;
+    background-color: rgb(247, 170, 6);
+    border-radius: 100px;
+    font-size: 1rem;
+    color: #050007;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Hover effect for the search icon button */
+#search-icon:hover{
+    outline: none;
+}
+
+/* Styles for the container displaying emojis */
+#emoji-container{
+    padding: 0.625rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0.625rem;
+}
+
+/* Styles for individual emoji cards */
+.emoji-card{
+    border: 1px solid #d1b6b6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    min-height: 200px;
+    width: 200px;
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+    overflow-x: hidden; /* Ensure content doesn't overflow */
+    padding: 10px; /* Add padding to create space for text */ 
+   
+}
+
+/* Styles for emojis */
+.emoji{
+    font-size: 3.4rem;
+}
+
+/* Styles for emoji aliases */
+.alias{
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif; /* Change font family */
+    text-transform: uppercase; /* Convert text to uppercase */
+    color: #fcf6f6; /* Change text color */
+   
+    text-align: center;
+    font-weight:bolder;
+    overflow: visible; /* Allow content to overflow */
+    white-space: normal; /* Allow text to wrap */
+    text-overflow: ellipsis; /* Truncate text with ellipsis if it overflows */
+}
+
+/* Styles for emoji descriptions */
+.description{
+    font-size: 0.9rem;
+    text-align: center;
+    font-family: 'Verdana', sans-serif; /* Font family */
+    color: #faf6f5; /* Text color */
+    
+}
